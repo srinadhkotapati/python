@@ -1,0 +1,41 @@
+import random
+computer_random = random.randint(0,2)
+s = input("type 0 for rock & 1 for paper & 2 for scissor")
+if not s.isdigit():
+    print("Inavalid number")
+else:
+    s = int(s)
+if s > 2:
+    print("invalid")
+        
+elif s == 0 or s == 1 or s == 1:
+        if s == 0:
+            print("rock")
+        elif s == 1:
+            print("paper")
+        elif s == 2:
+            print("scissor")
+if computer_random == 0:
+    print("computer chooses rock")
+    if s == 0:
+        print("It's DRAW")
+    elif s == 1:
+        print("You loss")
+    else:
+        print("You loss, rock wins against scissor")
+if computer_random == 1:
+    print("computer chooses paper")
+    if s == 0:
+        print("you win")
+    elif s == 1:
+        print("It's draw")
+    else:
+        print("you win, scissor won against paper")
+if computer_random == 2:
+    print("computer chooses scissor")
+    if s == 0:
+        print("you loss, rock won  against scissor")
+    elif s == 1:
+        print("You lost")
+    else:
+        print("draw")
